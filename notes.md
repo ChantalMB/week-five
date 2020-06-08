@@ -1,0 +1,91 @@
+# Week 5: Notes
+
+- Activities I have chosen to do this week:
+  - Mapping
+  - Posters
+  - Static Website --> I'm counting this as a half-activity because rather than building a website, I'm just porting the site I've been using this whole course to Hugo + Netlify rather than keeping it using Jekyll + gh-pages
+- Sonification is cool and interests me but I had to do a lot of podcasts/audio editing last semester so I need a break
+- Actually reading through the instructions page for this week I want to do everything (except another podcast) but I know I don't have time to and that's sad --> my desired career path heavily relates to UI/UX design and this week is all about making research/data interactive and/or digestible
+
+### Mapping
+- Storymap
+  - Not a huge fan of the powerpoint-esque styling --> feels cluttered
+  - Making small map cataloguing life of Malak Karsh
+    - Did infobox for NCC on Malak Karsh and the tulip festival
+    - Very active life so I thought it would be fitting for a map
+  - I like that you can customize map markers --> tulip for Malak
+  - For blog:
+    - ```<iframe src="https://uploads.knightlab.com/storymapjs/11199eb89596bd6c6928fd1907b65354/unknown/index.html" frameborder="0" width="100%" height="800"></iframe>```
+- Webmapping with Leaflet
+  - Interesting that when you use a Storymap it states that it is powered by Leaflet
+  - Fixed HTML formatting
+  - Adding a new layer to our map
+    - This makes the previous explanation of tiles more tangible
+    - Like that I can sign into Map Warper via GitHub
+  - Georectifying a base map
+    - Naviagting panels a bit confusing --> like having too many tabs open at once
+  - Adding a layer control button
+    - Interesting way that the control panel is auto-built in
+    - Is the lumber map to scale?
+    - Layers sluggish at loading
+  - Adding animation
+    - I added my created map as an overlay --> why is it so low resolution?
+
+
+### Posters
+- Currently generate the media for CCSS so I'm hoping this might give insight into my poster making skillz
+- Using Illustrator because my computer struggles to virtualize Inkscape
+- Sprucing up a PDF
+  - Used different fonts for labels and titles for aesthetics and differentiation
+  - Made a 3 colour palette for bars using Colour Brewer
+  - Legend is technically incorrect because one bar goes above 50 --> if I actually created this graph I would scale differently
+    - Legend also feels oddly placed... if scaled differently I may have chosen to use only 3 colours to show broader trends
+- Make an Academic Poster
+  - I hated all of the Ugo Sangiorgi/Felix Breuer designs --> too scientific, does not capture creativity of essay/humanities work
+    - I agree overall with Breuer's note on colour, but strongly disagree with his notion that posters should use flat colour
+      - Gradients (like what he used) made me KNOW his poster was from 2010
+      - Flat colour is fine for modern more minimalist design --> can be offset by creating shadows for boxes, using small pattern for bg with no texts + translucent boxes for titles, etc
+  - Making my own design based on Colin Purrington template + article --> because I mentioned it last week I'm going to make the poster about my essay on 19th century British perception of the waist
+  - 3 font combo: Fjalla One + Futura for titles and Baskerville font for body text
+  - There is no visuals in this essay so I added some fashion plates for visual interest --> I'm pretty sure making these took longer than the rest of the poster
+  - The more I work on this the more I realize that this is very difficult to do with an essay
+  - Who do I acknowledge??? --> I thanked the prof I wrote the essay for...
+  - Before I save this I'm going to update my site, then create a hidden page where the essay is published that I can link to on the poster
+  - Overall I don't like my poster (although I still like it more than the examples) --> too text heavy, perhaps would help if I've done more essays in my academic career that involved visuals in some way
+    - Aesthetically boring becuase of lack of visuals
+    - Colour palette could have been more fun but I couldn't find any palette generators that would create a palette from one colour that wasn't single-hue --> I'm bad at coordinating colours so I just stuck to making my own single-hue palette which is a bit boring
+
+### Migrating my Course Site
+- 1st task: convert Jekyll site to Hugo
+  - Jekyll's slow build time kept making me think that nothing was happening or something went wrong
+  - Install Hugo via ```brew install hugo```
+    - No missing dependancies yay!
+  - Used the command ```hugo import jekyll jekyll-site-folder folder-for-hugo-site```
+  - Opened up my newly filled folder --> this imported all my posts which is great
+  - Is there something I can use to migrate my current theme to Hugo syntax?
+    - Nope looks like I'd have to do it manually.
+    - Looks like I'm looking for a new theme --> like my current theme but not enough to suffer through hours of reading and shuffling my scss and html styling
+  - Selected the [Newsroom theme](https://themes.gohugo.io/newsroom/) --> I like that you can switch it to dark mode, but I might still change the general colour palette
+    - Added theme with specified command but when I deploy via Netlify nothing shows...
+    - Going to work locally for now
+- 2nd task: Modifying Website
+  - Things I don't like about this site that I'm going to try and change:
+    - In-post headings not spaced correctly
+    - Header photos need to be standardized
+    - Can't insert iframes or pictures??? --> why would you make a blog theme and then not allow pictures...
+  - **ROAD BLOCK**
+    - Netlify ate my website --> account got marked as suspicious...
+      - Gonna use this time to find or make a Better theme
+    - **NEW THEME**: [Chunky](https://github.com/puresyntax71/hugo-theme-chunky-poster)
+  - Hugo is moderately hellish
+    - Super strict file structure
+    - Shortcodes a bit of a pain
+    - Theme vs site structure confusing to differentiate/navigate
+  - NETLIFY IS BACK
+    - Site is deployed!! After 3 tries!
+    - Things I want to fix (but not now):
+      - Less boring colour scheme
+      - Get rid of that strange top bit of page that just repeats the title
+      - Clean up unused stuff in this theme
+      - Post tags break it???
+- Just realized that now I have to go back to all my previous READMEs to correct the site link...
